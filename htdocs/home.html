@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link ink rel="stylesheet" href="style.css" type="text/css">
+        <link ink rel="stylesheet" href="home.css" type="text/css">
+        <title>Papa Potato - Home</title>
+    </head>
+
+    <body>
+    <!-- navigation -->
+        <div class="nav_container">
+            <nav>
+                <div class="left_menu">
+                <ul class="menu">                
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="Promotions.html">Promotions</a></li>
+                </ul>
+                </div>
+
+                <div class="logo_menu">
+                    <a href="home.html" class="logo" id="logobutton"><img src="images/vector logo.svg" height="80"  alt="logo"></a>
+                </div>
+
+                <div class="right_menu">
+                <ul class="menu"> 
+                    <li><a href="Cart.html"><img src="images/shoppingcart.png" height = "30" alt="cart"></a></li>
+                    <li><a href="ContactUs.html" id="contactUsbutton">Contact Us</a></li> 
+                </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- landing branding -->
+        <img id="tagline_img" src=".//images/Tagline2.svg" alt="Landing Page Tagline Image">
+        <div class="ebutton"><a href="products.html" id="exploreMorebutton">Explore More!</a></div>
+
+        <img id="chips_img" src="images/chips.jpg" height="850px" alt="Chips Image">
+
+        <!-- Small Promo -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/Promo1.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/Promo2.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Promo3.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center;
+        margin-bottom:40px ;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <!--Recommended Products-->
+        <section id="recommend">
+            <div class="categories">
+                <h2>Recommended Products</h2>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="flavour">   
+                            <a href="ProductDetails/ProductDetails-TomatoTC.html" target="_blank"><img width="300px" src="images/JuicyTomatoThickCut.png"></a>
+                            <h4>Tomato</h4>
+                        </div>
+                    </div>
+                        
+                    <div class="col-1">
+                        <div class="flavour"> 
+                            <a href="ProductDetails/ProductDetails-SpicyTC.html" target="_blank"><img width="300px" src="images/SpicyThickCut.png"></a>
+                            <h4>Spicy</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1">
+                        <div class="flavour"> 
+                            <a href="ProductDetails/ProductDetails-SeaweedWavy.html" target="_blank"><img width="300px" src="images/BBQThickCut.png"></a>
+                            <h4>Seaweed</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1">
+                        <div class="flavour"> 
+                            <a href="ProductDetails/ProductDetails-SSTC.html" target="_blank"><img width="300px" src="images/CrunchySeaweedWavy.png"></a>
+                            <h4>Seasalt</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1">
+                        <div class="flavour"> 
+                            <a href="ProductDetails/ProductDetails-VeggieWavy.html" target="_blank"><img width="300px" src="images/FreshVeggieWavy.png"></a>
+                            <h4>Fresh Veggie</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-1">
+                        <div class="flavour"> 
+                            <a href="ProductDetails/ProductDetails-OriWavy.html" target="_blank"><img width="300px" src="images/OriWavy.png"></a>
+                            <h4>Original</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <footer>
+            <div class="wrapper">
+                <div class="grid_footer1">
+                    <div class="grid_items">
+                        <img src="images/vector logo.svg" height="105"  alt="logo">
+                    </div>
+                    <div class="grid_items">
+                        <h3>Email:</h3>
+                            <p>contact@papapotato.my</p>
+                    </div>
+                    <div class="grid_items">
+                        <h3>Hotline:</h3>
+                            <p>1700-82-0311</p>
+                    </div>
+                </div>
+
+                <div  class="grid_footer2">
+                        <div class="copyright">
+                                <p>&#169; Copyright 2021. All rights reserved by Papa Potato Sdn Bhd.</p>
+                        </div>
+
+                        <div class="icons">
+                            <ul class="socialmediaicons">    
+                                <li><a href="https://www.facebook.com/"><img src="images/facebook.png" height="30"  alt="icon"></a></li>
+                                <li><a href="https://www.instagram.com/"><img src="images/instagram.png" height="30"  alt="icon"></a></li>
+                                <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.png" height="30"  alt="icon"></a></li>
+                                <li><a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" height="30"  alt="icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

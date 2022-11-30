@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ink rel="stylesheet" href="style.css" type="text/css">
+    <link ink rel="stylesheet" href="contactus.css" type="text/css">
+    
+    <title>Papa Potato - Contact Us</title>
+</head>
+
+
+<body>
+<div class="nav_container">
+    <nav>
+        <div class="left_menu">
+        <ul class="menu">                
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="Promotions.html">Promotions</a></li>
+        </ul>
+        </div>
+
+        <div class="logo_menu">
+            <a href="home.html" class="logo" id="logobutton"><img src="images/vector logo.svg" height="80"  alt="logo"></a>
+        </div>
+
+        <div class="right_menu">
+        <ul class="menu"> 
+            <li><a href="Cart.html"><img src="images/shoppingcart.png" height = "30" alt="cart"></a></li>
+            <li><a href="ContactUs.html" id="contactUsbutton">Contact Us</a></li> 
+        </ul>
+        </div>
+
+    </nav>
+</div>
+
+<main>
+    <div class="heading">
+       <h1>Contact Us</h1>
+    </div>
+
+   <div class="text">
+       <p>If you have questions or just want to get in touch, fill in the form and we will answer you shortly.</p>
+   </div>
+
+   <div class="main_content">
+       <div class="col-1">
+            <div class="left_content">
+                <form action ="insertdata-contactus.php" method="post">
+                    <div class="form">
+                        <div>
+                            <label for ="name">Name</label>
+                        </div>    
+
+                        <div>
+                            <input type = "text" id="name" name="user_name" maxlength="50" class="user_input" required>
+                        </div>  
+                    </div>
+
+                    <div class="form">
+                        <div>
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="user_contact" style="width: 10%;">    
+                            <p>+60</p>
+                            &nbsp;
+                        </div>
+
+                        <div  class="user_contact" style="width: 89%;">
+                            <input type="number" id="phone" name="phone_num" maxlength="8" class="user_input" required>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div>
+                            <input type="email" id="email" name="email" maxlength="30" class="user_input" required>
+                        </div> 
+                    </div>
+
+                    <div class="form">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="user_message" maxlength="200" required></textarea>
+                    </div>
+
+                    <div class="form">
+                        <input type="checkbox" id="checkbox1" name="checkbox" required>
+                        <label for="checkbox1">I am not a robot</label>
+                    </div>
+
+                    <div>
+                        <div>
+                            <input type="submit" value="Submit" class="submitbutton">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+       </div>
+
+       <div class="col-1">
+            <div class="right_content">
+                <div>
+                    <h4>Hotline: </h4>
+                    <p class="paragraph">1700-82-0311</p>
+
+                    <h4>Email: </h4>
+                    <p class="paragraph">contact@papapotato.my</p>
+
+                    <h4>Facebook /</h4>
+                    <h4>Instagram /</h4>
+                    <h4>Twitter /</h4>
+                    <h4>LinkedIn: </h4>
+                    <p class="paragraph">Papa Potato Malaysia</p>
+                </div>
+           
+                <div>
+                    <hr style="border: 0.5px solid #FFB001;">
+                </div>
+
+                <div style="padding-top: 20px;">
+                    <h4>Business Operation Hours (Online)</h4>
+                    <p class="paragraph">8am - 6pm Daily</p>
+                </div>
+           </div>
+       </div>
+   </div>
+
+</main>
+
+<script>
+    function validateform(){
+
+        var name=document.forms["myform"]["user_name"].value;
+        if(name == null || name == "" || Number(name)){
+            alert("Please enter a valid name that contains only alphabets and spaces.");
+            return false;
+        }
+
+        var phoneNum=document.forms["myform"]["phone_num"].value;
+        if(phoneNum == null || phoneNum == "" || isNaN(phoneNum)){
+            alert("Please enter a valid phone number.");
+            return false;
+        }
+
+        var message=document.forms["myform"]["user_message"].value;
+        if(message == null || message == ""){
+            alert("Please enter a valid message.");
+            return false;
+        }
+    }
+
+</script>
+
+
+<footer>
+<div class="wrapper">
+    <div class="grid_footer1">
+        <div class="grid_items">
+            <img src="images/vector logo.svg" height="105"  alt="logo">
+        </div>
+        <div class="grid_items">
+            <h3>Email:</h3>
+                <p>contact@papapotato.my</p>
+        </div>
+        <div class="grid_items">
+            <h3>Hotline:</h3>
+                <p>1700-82-0311</p>
+        </div>
+    </div>
+
+    <div  class="grid_footer2">
+            <div class="copyright">
+                    <p>&#169; Copyright 2021. All rights reserved by Papa Potato Sdn Bhd.</p>
+            </div>
+
+            <div class="icons">
+                <ul class="socialmediaicons">    
+                    <ul class="socialmediaicons">    
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagram.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" height="30"  alt="icon"></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>

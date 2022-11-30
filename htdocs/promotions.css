@@ -1,0 +1,48 @@
+.white-container {
+    margin-top: 3.5%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #ffffff;
+    height: fit-content;    
+    width: 98%;
+    padding: 1%; 
+}
+
+h1{
+    background-color: white; color: blue; text-align: center ; padding: 20px;
+}
+
+.white-container-child1{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: hsl(20, 100%, 48%);
+    margin-right: 0%;
+    padding: 0% 1% 2.5% 5%;
+    width: 840px;
+    width: 45%;
+    height: 40%;
+}
+
+.white-container-child2{
+    color: hsl(20, 100%, 48%);
+    margin-right: 1.1%;
+    margin-top: 2%;
+    padding: 2.5%;
+    width: 700px;
+    width: 80%;
+    /* max-width: 85%; */
+    height: 60%;
+    /* max-height: 70%; */
+}
+
+.white-container-button{
+    background-color: #ffffff;
+    color: hsl(20, 100%, 48%);
+    margin-top: 77%;
+    width: 800px;
+    height: 85px;
+}

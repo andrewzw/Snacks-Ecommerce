@@ -1,0 +1,62 @@
+body{
+    background-color: #FFB001;
+}
+
+h1{
+    background-color: white; color: blue; text-align: center ; padding: 20px;
+}
+
+.orangeButtonBox {
+    border-radius:70px;
+    width: 95%;
+    background-color: #F45314;
+    margin: 4% auto 4% auto;
+    text-align: center;
+}
+
+.flex-container {
+    background-color: #F45314;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 4% auto 4% auto;
+}
+
+.flex-item {
+    background-color: #FFFFFF;
+    color: black;
+    flex: 1 1 1;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0.5% 0% 0.5% 0%;
+}
+
+#valuepacksbutton{
+    background-color: #ffffff;
+    color: #F45314;
+    border-radius: 50px;
+    height: 40px;
+    width: 95%;
+    padding: 10px 15px 15px 15px;
+    text-align: center;
+    font-size: 170%;
+}
+
+#valuepacksbutton:hover{
+    background-color: #0544E2;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 95%;
+    padding: 10px 15px 15px 15px;
+    text-align: center;
+    font-size: 170%;
+}
+
+  

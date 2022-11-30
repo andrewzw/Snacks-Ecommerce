@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ink rel="stylesheet" href="style.css" type="text/css">
+    <link ink rel="stylesheet" href="cart.css" type="text/css">
+    <title>Papa Potato - Cart</title>
+</head>
+
+<body>
+    <div class="nav_container">
+        <nav>
+            <div class="left_menu">
+            <ul class="menu">                
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="Promotions.html">Promotions</a></li>
+            </ul>
+            </div>
+
+            <div class="logo_menu">
+                <a href="home.html" class="logo" id="logobutton"><img src="images/vector logo.svg" height="80"  alt="logo"></a>
+            </div>
+
+            <div class="right_menu">
+            <ul class="menu"> 
+                <li><a href="Cart.html"><img src="images/shoppingcart.png" height = "30" alt="cart"></a></li>
+                <li><a href="ContactUs.html" id="contactUsbutton">Contact Us</a></li> 
+            </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class = "heading">
+            <h1> Cart </h1>
+        </div>
+        <form action ="insertdata-cart.php" method="post">
+            <div class = "cartItem">
+                <div class="text">
+                    <p>Thick Cut Chips</p>
+                </div>
+
+                <!-- product -->
+                <div><img src="images/BBQThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">BBQ Thick Cut</span> <br><br>                   
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                <table><tr>
+                        <td><input type="number" id="display" name="BBQThickCut" width="20" value="0"></td>
+                </tr></table></div>
+                
+                <!-- product -->
+                <div><img src="images/DoubleCheesyThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Double Cheesy Thick Cut</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display1" width="20" name="DoubleCheesyThickCut" value="0"></td>        
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/JuicyTomatoThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Juicy Tomato Thick Cut</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display2" width="20" name="JuicyTomatoThickCut" value="0"></td>       
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/OriThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Original Thick Cut</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display3" width="20" name="OriginalThickCut" value="0"></td>       
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/SeaSaltThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Sea Salt Thick Cut</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display4" width="20" name="SeaSaltThickCut" value="0"></td>          
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/SpicyThickCut.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Spicy Thick Cut</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display5" width="20" name="SpicyThickCut" value="0"></td>       
+                </tr></table></div>
+                
+                <br>
+                <br>
+                <br>
+                <div class="text">
+                    <p>Wavy Chips</p>
+                </div>
+
+                <!-- product -->
+                <div><img src="images/BBQWavy.png" ALIGN="left" height = "150" ></div>
+                <span class ="productName">BBQ Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display6" width="20" name="BBQWavy" value="0"></td>            
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/CrunchySeaweedWavy.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Crunchy Seaweed Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display7" width="20" name="CrunchySeaweedWavy" value="0"></td>         
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/FreshVeggieWavy.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Fresh Veggie Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display8" width="20" name="FreshVeggieWavy" value="0"></td>           
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/JuicyTomatoWavy.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Juicy Tomato Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display9" width="20" name="JuicyTomatoWavy" value="0"></td>
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/OriWavy.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Original Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                        <td><input type="number" id="display10" width="20" name="OriginalWavy" value="0"></td>          
+                </tr></table></div>
+
+                <!-- product -->
+                <div><img src="images/SpicyWavy.png" ALIGN="left" height = "150"></div>
+                <span class ="productName">Spicy Wavy Chips</span> <br><br>          
+                <span class ="productPrice" ALIGN="left"> RM 6</span>
+                <div class ="quantity">
+                    <table><tr>
+                    <td><input type="number" id="display11" width="20" name="SpicyWavy" value="0"></td>
+                </tr></table></div>
+                <br>
+                <br>
+                <hr>
+                
+                <!-- count the total amount customer need to pay -->
+                <p><td>Hi there! Don't forget to count your total amount before checking out.</td></p>
+                <br>
+                <div class ="quantity">
+                    <table><tr>
+                    <td><a id="totalamountbutton" href="javascript:sumInputs()">Total Amount (RM):</a></td>
+                    <td><input type="number" id="total" width="20" name="TotalAmount_RM" value="0"></td> 
+                    <td><input type="reset" onclick="resetInput(total)" value="Reset"></td>
+                </tr></table></div>
+            
+                <script>
+                window.sumInputs = function() {
+
+                    var inputs = document.getElementsByTagName('input'),
+                        result = document.getElementById('total'),
+                        sum = 0;            
+                    
+                    for(var i=0; i<inputs.length; i++) {
+                        var ip = inputs[i];
+                    
+                        if (ip.name && ip.name.indexOf("total") < 0) {
+                            sum += parseInt(ip.value) || 0;
+                        }
+                    
+                    }
+                    result.value = sum*6;
+                }
+                </script>
+                <br>
+                <br>
+
+                <div class="paybutton">
+                    <input type="submit" value="Check Out">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+    <div class="wrapper">
+        <div class="grid_footer1">
+            <div class="grid_items">
+                <img src="images/vector logo.svg" height="105"  alt="logo">
+            </div>
+            <div class="grid_items">
+                <h3>Email:</h3>
+                    <p>contact@papapotato.my</p>
+            </div>
+            <div class="grid_items">
+                <h3>Hotline:</h3>
+                    <p>1700-82-0311</p>
+            </div>
+        </div>
+
+        <div  class="grid_footer2">
+            <div class="copyright">
+                    <p>&#169; Copyright 2021. All rights reserved by Papa Potato Sdn Bhd.</p>
+            </div>
+
+            <div class="icons">
+                <ul class="socialmediaicons">    
+                    <ul class="socialmediaicons">    
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagram.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitter.png" height="30"  alt="icon"></a></li>
+                        <li><a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" height="30"  alt="icon"></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

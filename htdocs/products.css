@@ -1,0 +1,70 @@
+
+h1{
+    background-color: white; color: blue; text-align: center ; padding: 20px;
+}
+
+h4{
+    background-color: black; 
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 25px;
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.products_container{
+    background-color: orange;
+    display: flex;
+    margin: 3rem auto;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.product{
+    background-color: white;
+
+    padding: 6px 6px 0px 6px ;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-basis: 30.5%;
+    
+}
+
+.orangeButtonBox {
+    border-radius:70px;
+    width: 95%;
+    background-color: #FFB001;
+    margin: 4% auto 4% auto;
+    text-align: center;
+  }
+
+#valuepacksbutton{background-color: #ffffff;
+    color: #F45314;
+    border-radius: 50px;
+    height: 40px;
+    width: 95%;
+    padding: 10px 15px 15px 15px;
+    text-align: center;
+    font-size: 170%;
+    }
+
+#valuepacksbutton:hover{background-color: #0544E2;
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    width: 95%;
+    padding: 10px 15px 15px 15px;
+    text-align: center;
+    font-size: 170%;
+}
+
+ul .menu{
+    padding-left: 0%;
+}
+ 

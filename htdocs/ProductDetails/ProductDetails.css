@@ -1,0 +1,120 @@
+body{
+    background-color: #FFB001;  
+}
+
+.heading{background-color: #FFFFFF; 
+    color: #F45314;
+    padding: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    margin-top: 5%;}
+
+#banner-section{
+    margin: 3%;
+}
+
+.banner-container{
+    background-color: hsl(20, 100%, 48%) ;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:80%;
+    margin: auto;
+}
+
+.right-col{
+    flex-basis: 50%;
+}
+
+.right-col img{
+    width: 60%;
+    margin: 50px 100px;
+}
+
+.left-col{
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+.banner-text{
+    max-width: 400px;
+    margin-right: 30px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.banner-text h1{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+.quantity button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0;
+    background: #fff;
+}
+
+.quantity input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+.add-to-cart-container{
+    background-color: hsl(20, 100%, 48%) ;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.right-col2{
+    flex-basis: 50%;
+}
+
+.left-col2{
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+
+.collapsible {
+    background-color: hsl(20, 100%, 48%);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    font-weight: bolder ;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(255, 251, 251);
+    color:hsl(20, 100%, 48%);
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: hsl(20, 100%, 48%);
+}

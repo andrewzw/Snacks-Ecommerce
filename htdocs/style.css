@@ -1,0 +1,93 @@
+body{background-color: #F45314;
+    display: block;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 120%;
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+main{margin: 5%; 
+    text-align: justify;}
+
+nav{display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;}
+    
+/*navbar - menu*/
+.nav_container{position: sticky;
+                top: 0;
+            z-index: 999999;}
+
+.menu li{display: inline-flex;
+            font-weight: 700;
+            margin-left: 70px;}
+
+.menu li a{text-decoration: none;
+            color: #0544E2;
+            font-size: 120%;}
+
+.menu li a:hover{color: #FFB001;}
+
+.left_menu{width: 47%;}
+
+.logo_menu{width: 25%;}
+
+.right_menu{width: 40%;}
+
+.logo{text-decoration: none;
+    position: absolute;}
+
+#logobutton{background-color: #FFFFFF;
+            border-radius: 50px;
+            top: 0;
+            padding: 20px;
+            padding-bottom: 10px;}
+
+#contactUsbutton{background-color: #0544E2;
+            line-height: 18px;
+            color: #FFFFFF;
+            border-radius: 50px;
+            height: 20px;
+            padding: 10px;}
+
+#contactUsbutton:hover{background-color: #FFB001;
+            line-height: 18px;
+            color: #FFFFFF;
+            border-radius: 50px;
+            height: 20px;
+            padding: 10px;}
+
+
+/*footer*/
+.wrapper{padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        background-color: #FFFFFF;}
+
+.grid_items{width: 33.33%;}
+
+.grid_footer1{margin: 20px;
+            margin-top: 10px;
+            color: #000000;
+            background-color:#FFFFFF;
+            display: flex;}
+
+.grid_footer2{margin: 20px;
+            color: #000000;
+            display: flex;
+            margin-bottom: 0;}
+
+.copyright{margin-top: 10px; 
+            width: 75%;}
+
+.icons{width: 25%;
+        margin-top: 10px;}
+
+.socialmediaicons{list-style: none; 
+                    display: flex;}
+
+.socialmediaicons li{padding-left: 30px;}
